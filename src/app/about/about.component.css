@@ -1,0 +1,278 @@
+.about{
+    /* height: 100vh; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.about-h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .about-h h1{
+    position: relative;
+    left: 45px;
+    font-size: 100px;
+    font-weight: 800;
+    color: #ffffff;
+    z-index: -1;
+    text-shadow: 5px -5px 10px #000, -1px 0 0 #000, 0 1px 0 #000, 
+    0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
+    opacity: 0.1;
+} */
+/* .ah{  
+    position: relative;
+    z-index: 1;
+    top: 14px;
+    left: -170px;
+} */
+.ah p{
+    font-family:  sans-serif;
+    font-weight: 600;
+    font-size:25px;
+    padding: 20px;
+}
+.my{
+    display: flex;
+}
+.myself{
+    width: 600px;
+    padding: 15px 15px 10px 25px;
+}
+.my-info p{
+    padding: 10px 0px;
+    border-top: 1px  solid #0000005e;
+    border-bottom: 1px solid #0000005e;
+}
+.sicon{
+    display: flex;
+    position: absolute;
+    left:80px;
+    gap: 20px;
+}
+.github{
+    background: transparent;
+    position: relative;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+}  
+.github span {
+    margin: 5px;
+}
+.github::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 19em;
+    height: 19em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+} 
+.github:hover {
+    color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+} 
+.github:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
+}
+.linked {
+    background: transparent;
+    position: relative;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(0, 119, 181);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(0, 119, 181);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+}
+.linked span {
+    margin: 5px;
+}
+.linked::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 19em;
+    height: 19em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+}
+.linked:hover {
+    color: #fff;
+    border: 1px solid rgb(0, 119, 181);
+}
+.linked:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
+}
+.skills{
+    margin: 5px;
+    display: flex;
+    gap:10px;
+    width: 700px;
+    flex-wrap: wrap;
+}
+.skill-box{
+    height: fit-content;
+    position: relative;
+}
+.aboutcard{
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 160px;
+    height:140px;
+    text-align: center;
+    background: transparent;
+}
+body.dark-theme .aboutcard{
+    background-color: #ffffff08;
+}
+.icon-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto 1px;
+}
+.bg1{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 16px 0px 17px 0px;
+    width: 100px;
+    height: 60px;
+    background-color: #dcdcdc66;
+    z-index: -2;
+}
+.bg2{
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+    border-radius: 16px 0px 16px 0px;
+    width: 60px;
+    height: 100px;
+    background-color: #dcdcdc66;
+    z-index: -3;
+}
+body.dark-theme .st{
+    color: #ffffff;
+}
+body.dark-theme .bg1{
+    background-color: #dcdcdc1a;
+}
+body.dark-theme .bg2{
+    background-color: #dcdcdc1a;
+}
+.aboutcard:hover ~ .bg1{
+   width:120px;
+   height: 40px;
+   transition:all 0.8s ease-in-out;
+   /* -webkit-transition: all 0.3s ease-in-out; */
+}
+.aboutcard:hover ~ .bg2{
+    width:40px;
+    height: 120px;
+    transition:all 0.8s ease-in-out;
+    /* -webkit-transition: all 0.3s ease-in-out; */
+}
+
+@media (max-width: 844px) {
+
+  .about{
+    padding: 20px 15px;
+  }
+
+  /* Heading */
+  .about-h h1{
+    font-size: 56px;
+    left: 0;
+    text-align: center;
+    display: none;
+  }
+
+  .ah{
+    top: 0;
+    left: 0;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  .ah p{
+    font-size: 20px;
+  }
+
+  /* Main layout stack */
+  .my{
+    flex-direction: column;
+  }
+
+  .myself{
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Social icons */
+  .sicon{
+    position: relative;
+    left: 0;
+    justify-content: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+
+  /* Skills section */
+  .skills{
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .aboutcard{
+    width: 140px;
+    height: 130px;
+  }
+
+  /* Icon alignment inside cards */
+  .icon-wrapper{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}

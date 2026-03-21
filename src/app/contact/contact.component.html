@@ -1,0 +1,44 @@
+<section class="contact">
+    <div class="contact-h">
+        <div>
+            <h2>Contact</h2>      
+        </div>
+        <div class="ch">
+            <p>Get in <span style="color: #ff6f6f;">Touch</span></p>   
+        </div>
+    </div>
+    <div class="chm">
+        <p style="text-align: center; padding-top: 5px;"><i>I'm interested in a conversation. Please contact me at your convenience.</i></p>
+    </div>
+    <div>
+        <div class="contact-form">
+            <form id="sform" (submit)="sendEmail($event)">
+                <div class="input-group">
+                    <label for="name" class="icon"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" name="name" placeholder="Full Name" class="form-input" />
+                </div>
+                <div class="input-group">
+                    <label for="email" class="icon"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="email" name="email" placeholder="Email" class="form-input" />
+                </div>
+                 <div class="input-group">
+                    <label for="name" class="icon"><i class="far fa-edit"></i></label>
+                    <input type="text" name="subject" placeholder="Subject" class="form-input" />
+                </div>
+                <div class="input-group">
+                    <label for="phone" class="icon"><i class="fa-solid fa-phone"></i></label>
+                    <input type="tel" name="phone" placeholder="Phone" class="form-input" />
+                </div>
+                <div class="input-group textarea-group">
+                    <label for="message" class="icon"><i class="fa-solid fa-message"></i></label>
+                    <textarea name="message" placeholder="Message" class="form-textarea"></textarea>
+                </div>
+                    <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Submit
+                </button>
+            </form>
+        </div>
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+             text-align: center;">Designed by PavanKumar</p>
+    </div>
+</section>

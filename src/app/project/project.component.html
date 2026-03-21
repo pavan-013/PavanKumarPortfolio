@@ -1,0 +1,50 @@
+<section class="project">
+    <div class="project-h">
+        <!-- <div>
+            <h1>Portfolio</h1>      
+        </div> -->
+        <div class="ph">
+            <p>My <span style="color: #ff6f6f;">Projects</span></p>   
+        </div>
+    </div>
+    <div class="pr">
+        <div>
+            <img src="/images/R1.png" alt="Error" (click)="openModal()" class="pr-img" width="320px" height="220px">
+        </div>
+        <!-- Modal Overlay -->
+        <div class="modal-overlay" *ngIf="showModal">
+            <div class="modal-content">
+                <button class="close-btn" (click)="closeModal()">×</button>
+                <!-- Your Carousel -->
+                <div class="proje">
+                    <div class="real">
+                        <ngx-slick-carousel class="carousel" [config]="slideConfig"  #slickModal="slick-carousel" (mouseenter)="onMouseEnter(slickModal)"
+                        (mouseleave)="onMouseLeave(slickModal)">
+                            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                                <img [src]="slide.img" alt="gallery image" class="image" />
+                            </div>
+                        </ngx-slick-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matter-p">
+            <p> <b>Real Estate Website</b><br>
+                Developed a web application for real estate listings, featuring user 
+                authentication, property listings 
+                and posting, responsive design. <br>
+                Tech: <i>React JS, SpringBoot and MySql.</i></p>
+        </div>
+    </div>
+    <div class="pr2" style="width: fit-content;" >
+        <div>
+            <a href="https://pavan-013.github.io/portfolio/" target="_blank">
+                <img src="/images/port.png" alt="Error" class="pr-img" width="300px" height="200px">
+            </a>
+        </div>
+        <div class="matter-p">
+            <p><b>Portfolio</b><br>Developed and deployed a responsive portfolio website levaraging React.js, with seamless hosting on 
+                GitHub Pages for skill showcase.</p>
+        </div>
+    </div>
+</section>

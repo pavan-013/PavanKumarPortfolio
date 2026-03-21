@@ -1,0 +1,261 @@
+.hme{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.bg-text-1{
+    font-size:8rem;;
+    font-weight: 800;
+    color:rgba(240, 245, 245, 0.53);
+    font-family:  sans-serif;
+    position:absolute;
+    top: 40px;
+    z-index: -1;
+}
+.bg-text-2{
+    font-size:8rem;;
+    font-weight: 800;
+    color:rgba(240, 245, 245, 0.53);
+    font-family:  sans-serif;
+    font-family:  sans-serif;
+    position:absolute;
+    top:340px;
+    right:20px;
+    z-index: -1;
+}
+body.dark-theme .bg-text-1{
+    color:#d5d9d90c;
+}
+body.dark-theme .bg-text-2{
+    color:#d5d9d90c;
+}
+.intro{
+    z-index: 1; 
+}
+.intr{
+    font-size:35px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: end;
+    position: absolute;
+    top: 50px;
+    left: 360px;
+    z-index: 1;
+}
+.name{
+    color:#ff6f6f;
+}
+.res-bttn{
+    position: absolute;
+    top: 190px;
+    left: 160px;
+}
+.res-bttn p{
+    width: 320px;
+    text-align:end;
+}
+.cv{
+    position: absolute;
+    left: 150px;
+    border:1px solid #2b2a2c;
+    padding:10px 15px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+.cv:hover{
+    background-color: #7b4cc7;
+    border: none;
+    transition:0.8s ease-in;
+}
+body.dark-theme .cv {
+    border:1px solid #adacae5a;
+    color: rgb(255, 255, 255);
+}
+.photo{
+    width: 280px;
+    height: 380px;
+    border:1px solid #5712c547;
+    border-radius: 25px;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+}
+.image{
+    background-image: url("/images/removebg.png");
+    background-size: cover;
+    background-color: #b1aeb4e6;
+    border-radius: 25px;
+    position: relative;
+    bottom: 12px;
+    right: 12px;
+    width: 280px;
+    height: 380px;
+}
+.image:hover{
+    background-color: #b1aeb4e6;
+    border-radius: 25px;
+    width: 285px;
+    height: 385px;
+    z-index: 2;
+}
+.title {
+    font-size: 20px;
+    font-weight: 300;
+    position: absolute;
+    bottom: 110px;
+    right: 280px;
+}
+
+.text-wrapper {
+    display: inline-block;
+    position: relative;
+    height: 30px; /* adjust based on font-size */
+}
+/* Common text styles */
+.text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #6020c7; /* cursor effect */
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* hide initially */
+}
+.title p{ 
+    width: 100px; 
+    padding: 2px; 
+    border-radius: 5px; 
+    background-color: #6020c7bb; 
+}
+.developer {
+    animation: typeDev 10s steps(14) infinite; /* steps = # of characters */
+}
+.tester {
+    animation: typeTester 10s steps(15) infinite; /* steps = # of characters */
+}
+@keyframes typeDev {
+    0%, 50% { width: 0; opacity: 1; }
+    10%, 45% { width: 22ch; opacity: 1; } /* full text width in ch */
+    55%, 100% { width: 0; opacity: 0; }
+}
+@keyframes typeTester {
+    0%, 55% { width: 0; opacity: 0; }
+    60%, 90% { width: 26ch; opacity: 1; } /* full text width in ch */
+    95%, 100% { width: 0; opacity: 0; }
+}
+.arbtn{
+    position: absolute;
+    bottom:-20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.arbtn button{
+    border: 1px solid #000000;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+@media (max-width: 844px) {
+
+  .hme{
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 15px 80px;
+  }
+
+  /* Background text shrink */
+  .bg-text-1,
+  .bg-text-2{
+    font-size: 3.5rem;
+  }
+
+  .bg-text-1{
+    top: 10px;
+    left: 10px;
+    display: none;
+  }
+
+  .bg-text-2{
+    top: 200px;
+    right: 10px;
+    display: none;
+  }
+
+  /* Intro text block */
+  .intr{
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  /* Resume section */
+  .res-bttn{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+  }
+
+  .res-bttn p{
+    width: 100%;
+    text-align: left;
+  }
+
+  .cv{
+    position: relative;
+    left: 0;
+    margin-top: 10px;
+  }
+
+  /* Image center stack */
+  .photo{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 220px;
+    height: 300px;
+    margin: 30px auto 0;
+  }
+
+  .image{
+    width: 220px;
+    height: 300px;
+    bottom: 6px;
+    right: 6px;
+  }
+
+  .image:hover{
+    width: 225px;
+    height: 305px;
+  }
+
+  /* Animated title center */
+  .title{
+    position:absolute;
+    bottom: 80px;
+    left: 35px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  /* Arrow button */
+  .arbtn{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .arbtn button{
+    padding: 12px;
+  }
+
+}

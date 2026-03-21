@@ -1,0 +1,135 @@
+.conatct{
+    /* height: 100vh; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contact-h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-h h2{
+    position: relative;
+    left: 60px;
+    font-size: 100px;
+    font-weight: 800;
+    color: #ffffff;
+    z-index: -1;
+    text-shadow: 5px -5px 10px #000, -1px 0 0 #000, 0 1px 0 #000, 
+    0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
+    opacity: 0.1;
+}
+.ch{  
+    position: relative;
+    z-index: 1;
+    top: 14px;
+    left: -230px;
+}
+.ch p{
+    font-family:  sans-serif;
+    font-weight: 600;
+    font-size:25px;
+}
+.contact-form {
+  max-width: 560px;
+  margin: 20px auto;
+  padding: 10px 0px 0px;
+}
+#sform div label{
+  margin-top: 7px;
+  margin-left: 10px;
+}
+#sform div input,
+#sform div textarea{
+  width: 450px;
+  padding: 12px;
+  margin-bottom: 20px;
+  /* border: 1px solid #ffffff; */
+  box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-size: 13px;
+  outline: none;
+  transition: border 0.3s ease;
+  background: transparent;
+}
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007bff;
+}
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.icon {
+  color: #555;
+  font-size: 18px;
+  margin-right: 10px;
+  width: 30px; 
+}
+.submit-btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.submit-btn:hover {
+  background-color: #7b4cc7;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+@media (max-width: 844px) {
+
+  .conatct{
+    padding: 20px 15px 30px;
+  }
+
+  /* Heading */
+  .contact-h h2{
+    display: none;
+  }
+
+  .ch{
+    top: 0;
+    left: 0;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  .ch p{
+    font-size: 20px;
+  }
+
+  .chm p{
+    padding:0px 15px 0px;
+  }
+  /* Form container */
+  .contact-form{
+    max-width: 85%;
+    padding: 5px 10px;
+    margin: 20px auto;
+  }
+
+  /* Inputs & textarea */
+  #sform div input,
+  #sform div textarea{
+    width: 100%;
+    padding: 12px;
+  }
+
+  #sform div label{
+    margin-left: 0;
+  }
+
+  /* Submit button */
+  .submit-btn{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
