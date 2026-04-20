@@ -82,7 +82,7 @@ body.dark-theme .cv {
     left: 500px;
 }
 .image{
-    background-image: url("./assets/images/removebg.png");
+    background-image: url("/portfolio/src/assets/images/removebg.png");
     background-size: cover;
     background-color: #b1aeb4e6;
     border-radius: 25px;
